@@ -1,0 +1,55 @@
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the #content div and all content after.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Shapely
+ */
+
+?>
+
+            </div><!-- row -->
+		</div><!-- #main -->
+	</section><!-- section -->
+
+    <?php shapely_footer_callout(); ?>
+
+    <footer id="footer" class="site-footer footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="row">
+          <div class="col-sm-3 links">
+            <a href="/support">FAQ</a><br>
+            <a href="/support">CONTACT</a><br>
+            <a href="/shop">SHOP</a><br>
+            <a href="/terms-and-conditions">TERMS AND CONDITIONS</a>
+            <a href="/privacy-policy">PRIVACY POLICY</a>
+            <span class="small-text copyright-text">&copy; 2016 BY LIBRESUB</span>
+          </div>
+          <div class="col-sm-4">
+            <h5>THE COMPANY</h5>
+            <p>
+              Our story begins back in 2010 with one man's desire to dive without fins and the pain of trying to
+              learn the ever elusive hands free equalization. Years of innovation has lead to the revolutionary
+              noseclip. This is just the beginning though, we are constantly figuring out how to make gear
+              awesome.
+            </p>
+          </div>
+          <div id="sendgrid_mc_email_subscribe" class="col-sm-5">
+            <div id="footer-widget" class="widget-area">
+              <?php dynamic_sidebar('footer-widget-1'); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-sm back-to-top inner-link" href="#top"><i class="fa fa-angle-up"></i></a>
+    </footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+<?php wp_footer(); ?>
+
+</body>
+</html>

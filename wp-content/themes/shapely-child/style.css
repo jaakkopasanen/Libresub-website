@@ -1,0 +1,278 @@
+/*
+ Theme Name:   Shapely Child
+ Theme URI:    http:/libresub.com
+ Description:  Shapely child theme for Libresub website
+ Author:       Jaakko Pasanen
+ Author URI:   http://libresub.com
+ Template:     shapely
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, responsive-layout
+ Text Domain:  shapely-child
+*/
+@media (min-width: 992px) { .container { width: 800px; } }
+@media (min-width: 1200px) { .container { width: 970px; } }
+
+.fa { color: #00cfe6; }
+
+h1.page-title, header.entry-header { display: none; }
+
+.nav-container {
+	height: 56px;
+}
+#site-navigation {
+	transform: translate3d(0, 0px, 0);
+	-webkit-transform: translate3d(0, 0px, 0);
+	-moz-transform: translate3d(0, 0px, 0);
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	left: 0;
+	right: 0;
+	position: fixed;
+	opacity: 0;
+	visibility: visible;
+	opacity: 1;
+}
+
+a, a:focus, a:visited {
+	color: #666;
+	text-decoration: underline;
+}
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+.pagination li a:hover,
+.pagination li.active a,
+.pagination li.active:hover a {
+	background: #00b9ce;
+	border-color: #00b9ce;
+}
+.btn, .button {
+	color: #00b9ce;
+	border: 2px solid #00b9ce;
+	text-decoration: none;
+}
+.btn:visited {
+	color: #00b9ce;
+}
+input[type="submit"] {
+	border-color: #00b9ce;
+}
+.btn-filled,
+.button,
+input[type="submit"],
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+	color: #fff;
+	font-size: 12px;
+	background: #00b9ce;
+}
+.image-bg .btn.btn-filled:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover {
+	color: #fff;
+	background: #007380;
+	border-color: #007380;
+}
+.btn-filled:visited,
+input[type="submit"]:visited {
+	color: #fff;
+}
+.btn-filled:hover,
+input[type="submit"]:hover,
+.btn.searchsubmit:hover,
+.widget input[type="submit"]:hover,
+.btn:visited:hover {
+	color: #fff;
+	background: #007380;
+	border-color: #007380;
+}
+.woocommerce .cart .button,
+.woocommerce .cart input.button {
+	width: auto;
+}
+.woocommerce #content table.cart td.actions .input-text,
+.woocommerce table.cart td.actions .input-text,
+.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce-page table.cart td.actions .input-text {
+	width: 120px;
+}
+input:not([type]) {
+	background: #f5f5f5;
+	border: none;
+	width: 100%;
+	height: 50px;
+	padding-left: 20px;
+	font-weight: 500;
+	margin-bottom: 24px;
+	border-radius: 0;
+}
+
+ul.chevron-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+ul.chevron-list li { padding: 1.5em 0 1.5em 2.5em; }
+ul.chevron-list li:last-of-type { padding-bottom: 0; }
+ul.chevron-list li:before {
+	content: "\f054"; /* FontAwesome Unicode */
+	font-family: FontAwesome;
+	display: inline-block;
+	margin-left: -2.5em; /* same as padding-left set on li */
+	width: 2.5em; /* same as padding-left set on li */
+	color: #00cde4;
+}
+@media (max-width: 767px) {
+	ul.chevron-list li { padding: 1em 0 1em 2em; }
+	ul.chevron-list li:before {
+		margin-left: -2em;
+		width: 2em;
+	}
+}
+
+h2 { color: #00434a; }
+h3, h4 { color: #00b9ce; }
+h5 {
+	color: #00434a;
+	font-weight: bold;
+}
+
+section {
+	paddging: 0;
+	border-bottom: none;
+}
+
+.small-text {
+	font-size: 12px;
+}
+
+.parallax-window {
+	background: transparent;
+}
+
+.text-on-parallax,
+.text-on-parallax h1,
+.text-on-parallax h2,
+.text-on-parallax h3,
+.text-on-parallax h4,
+.text-on-parallax h5,
+.text-on-parallax h6 {
+	color: white;
+	text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+}
+.text-on-parallax .btn-filled {
+	text-shadow: none;
+}
+
+.full-height { min-height: 100vh; }
+.semi-high { min-height: 70vh; }
+.children-vertical-center {
+	display: flex;
+	align-items: center;
+}
+@media (min-width: 768px) {
+	.children-vertical-center-sm {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+#noseclip-reinvented img {
+	margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  #noseclip-reinvented {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+	#how-it-works img {
+		margin-bottom: 50px;
+	}
+}
+
+#testimonials {
+	text-align: center;
+}
+#testimonials .col-md-4 {
+	padding-right: 30px;
+	padding-left: 30px;
+	margin-bottom: 80px;
+}
+#testimonials .com-md-4:last-child {
+	margin-bottom: 0;
+}
+#testimonials img {
+	width: 200px;
+	margin-bottom: 50px;
+}
+#testimonials p {
+	margin-bottom: 48px;
+}
+#testimonials .fa {
+	font-size: 36px;
+}
+@media (min-width: 768px) {
+	#testimonials p { margin-bottom: 48px; }
+}
+@media (min-width: 992px) {
+	#testimonials .col-md-4 { margin-bottom: 0; }
+	#testimonials p { height: 72px; }
+	#testimonials .fa { margin-bottom: 0; }
+}
+@media (min-width: 1200px) {
+	#testimonials .col-md-4 {
+		padding-right: 120px;
+		padding-left: 120px;
+	}
+}
+
+#footer {
+	border-top: 1px solid #eee;
+}
+
+#footer .links a {
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 300;
+}
+#footer .copyright-text {
+	display: inline-block;
+	color: inherit;
+	margin-top: 80px;
+}
+#footer .back-to-top .fa {
+	color: inherit;
+}
+
+#footer .widget .widget-title {
+	border-bottom: none;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	letter-spacing: normal;
+	margin-bottom: 24px;
+	padding-bottom: 0;
+	color: #00434a;
+}
